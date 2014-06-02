@@ -26,14 +26,6 @@ frameworks/native/data/etc/android.hardware.camera.autofocus.xml:system/etc/perm
 # Config files
 PRODUCT_COPY_FILES += \
     device/bq/curie2qc/config/media_profiles.xml:system/etc/media_profiles.xml
-
-# Rootdir blob
-PRODUCT_COPY_FILES += \
-    device/bq/curie2qc/rootdir/rk30xxnand_ko.ko.3.0.36+:root/rk30xxnand_ko.ko.3.0.36+
-
-# Prebuilt
-PRODUCT_COPY_FILES += \
-    device/bq/curie2qc/prebuilt/updater:obj/EXECUTABLES/updater_intermediates/updater
     
 # Sensors
 PRODUCT_PACKAGES += \
