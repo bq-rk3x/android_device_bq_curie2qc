@@ -16,8 +16,6 @@
 
 -include device/bq/rockchip-common/BoardConfigCommon.mk
 
--include vendor/bq/curie2qc/BoardConfigVendor.mk
-
 TARGET_BOOTLOADER_BOARD_NAME := bq_Curie2_QuadCore
 
 TARGET_OTA_ASSERT_DEVICE := curie2qc,bq_Curie2_QuadCore
