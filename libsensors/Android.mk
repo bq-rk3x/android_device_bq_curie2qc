@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),bq_Curie2_QuadCore)
 LOCAL_PATH := $(call my-dir)
 
 # HAL module implemenation, not prelinked, and stored in
@@ -37,3 +37,4 @@ LOCAL_CFLAGS += -DCALIBRATION_SUPPORT
 endif
 
 include $(BUILD_SHARED_LIBRARY)
+endif # TARGET_BOOTLOADER_BOARD_NAME
