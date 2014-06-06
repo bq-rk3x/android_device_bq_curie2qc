@@ -19,14 +19,6 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 DEVICE_PACKAGE_OVERLAYS += device/bq/curie2qc/overlay
 
-# Hardware-specific features
-PRODUCT_COPY_FILES += \
-frameworks/native/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml
-
-# Config files
-PRODUCT_COPY_FILES += \
-    device/bq/curie2qc/config/media_profiles.xml:system/etc/media_profiles.xml
-    
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.rk30board
