@@ -27,7 +27,7 @@
 #include "SensorBase.h"
 
 //#define ENABLE_DEBUG_LOG
-#include "akm8975/custom_log.h"
+#include "custom_log.h"
 
 /*****************************************************************************/
 

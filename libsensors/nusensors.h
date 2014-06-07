@@ -31,7 +31,7 @@
 
 
 //#define ENABLE_DEBUG_LOG
-#include "akm8975/custom_log.h"
+#include "custom_log.h"
 
 /*
 sensor hal v1.1 add pressure and temperature support 2013-2-27
