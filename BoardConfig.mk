@@ -34,5 +34,5 @@ BOARD_FLASH_BLOCK_SIZE := 16384
 BOARD_CUSTOM_GRAPHICS := ../../../device/bq/curie2qc/recovery/graphics.c graphics_overlay.c
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/bq/curie2qc
+TARGET_KERNEL_SOURCE := kernel/bq/rk3188
 TARGET_KERNEL_CONFIG := cyanogenmod_curie2qc_defconfig
