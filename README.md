@@ -16,7 +16,7 @@ Use the following local manifest:
 
       <project name="bq-rk3x/android_device_bq_curie2qc" path="device/bq/curie2qc" revision="cm-11.0" />
       <project name="bq-rk3x/android_device_bq_rk3188-common" path="device/bq/rk3188-common" revision="cm-11.0" />
-      <project name="Kra1o5/android_kernel_bq_rk3188" path="kernel/bq/rk3188" revision="cm-11.0" />
+      <project name="bq-rk3x/android_kernel_bq_rk3188" path="kernel/bq/rk3188" revision="cm-11.0" />
       <project name="bq-rk3x/proprietary_vendor_bq" path="vendor/bq" revision="cm-11.0" />
     </manifest>
 
