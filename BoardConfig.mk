@@ -23,3 +23,6 @@ TARGET_OTA_ASSERT_DEVICE := curie2qc,bq_Curie2_QuadCore
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/bq/curie2qc/bluetooth
 
 TARGET_KERNEL_CONFIG := omni_curie2qc_defconfig
+
+# TWRP specific build flags
+DEVICE_RESOLUTION := 1024x768

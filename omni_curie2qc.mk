@@ -21,11 +21,8 @@ $(call inherit-product, vendor/omni/config/common_tablet.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit device specific configurations
+$(call inherit-product, device/bq/rk3188-common/device-common.mk)
 $(call inherit-product, device/bq/curie2qc/device.mk)
-
-# Inherit the rockchip-common definitions
-$(call inherit-product, device/bq/rockchip-common/device-common.mk)
-$(call inherit-product, vendor/bq/rockchip-common/rockchip-vendor.mk)
 
 # Set those variables here to overwrite the inherited values
 PRODUCT_NAME := omni_curie2qc
@@ -35,3 +32,6 @@ PRODUCT_MODEL := bq Curie 2 Quad Core
 PRODUCT_MANUFACTURER := bq
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=bq_Curie2_QuadCore
+
+# Inherit from the non-open-source side
+$(call inherit-product, vendor/bq/rk3188-common/rk3188-vendor.mk)
