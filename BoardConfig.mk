@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
--include device/bq/rockchip-common/BoardConfigCommon.mk
+-include device/bq/rk3188-common/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := bq_Curie2_QuadCore
 
