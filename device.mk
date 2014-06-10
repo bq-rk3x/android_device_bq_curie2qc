@@ -18,11 +18,6 @@ PRODUCT_AAPT_CONFIG := normal mdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 DEVICE_PACKAGE_OVERLAYS += device/bq/curie2qc/overlay
-
-# Sensors
-PRODUCT_PACKAGES += \
-    sensors.rk30board
 	
-# Default config
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160
