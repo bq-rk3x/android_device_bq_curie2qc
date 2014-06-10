@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_curie2qc-userdebug
+add_lunch_combo omni_curie2qc-userdebug

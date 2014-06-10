@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_curie2qc.mk
+    $(LOCAL_DIR)/omni_curie2qc.mk

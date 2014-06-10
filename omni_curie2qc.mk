@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2014 OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,26 +14,24 @@
 # limitations under the License.
 #
 
-# This file is the build configuration for a full Android
-# build for curie2qc hardware. This cleanly combines a set of
-# device-specific aspects (drivers) with a device-agnostic
-# product configuration (apps). Except for a few implementation
-# details, it only fundamentally contains two inherit-product
-# lines, full and curie2qc, hence its name.
+# Inherit common Omni configurations
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
 
-# Inherit from the common open source product configuration
+# Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit the curie2qc definitions
+# Inherit device specific configurations
 $(call inherit-product, device/bq/curie2qc/device.mk)
 
 # Inherit the rockchip-common definitions
 $(call inherit-product, device/bq/rockchip-common/device-common.mk)
 $(call inherit-product, vendor/bq/rockchip-common/rockchip-vendor.mk)
 
-# Set those variables here to overwrite the inherited values.
+# Set those variables here to overwrite the inherited values
+PRODUCT_NAME := omni_curie2qc
 PRODUCT_DEVICE := curie2qc
-PRODUCT_NAME := full_curie2qc
 PRODUCT_BRAND := bq
 PRODUCT_MODEL := bq Curie 2 Quad Core
 PRODUCT_MANUFACTURER := bq
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=bq_Curie2_QuadCore
