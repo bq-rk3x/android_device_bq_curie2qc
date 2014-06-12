@@ -29,4 +29,4 @@ PRODUCT_MODEL := bq Curie 2 Quad Core
 PRODUCT_MANUFACTURER := bq
 
 # Inherit from the non-open-source side
-$(call inherit-product, vendor/bq/rk3188-common/rockchip-vendor.mk)
+$(call inherit-product, vendor/bq/rk3188-common/rk3188-vendor.mk)
